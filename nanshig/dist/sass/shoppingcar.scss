@@ -1,0 +1,115 @@
+.content{
+    width: 1196px;
+    margin: auto;
+}
+
+#main{
+    padding: 30px 0;
+    h2{
+        font-size: 30px;
+        color: #666;
+    }
+    p{
+        font-size: 10px;
+        color: #999;
+        margin-bottom: 10px;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+        border-style: solid;
+        border-width: 2px 1px;
+        border-color: #AAA #DDD;
+        thead{
+            background-color: #eee;
+            color: #333;
+            th{
+                font-weight: normal;
+                padding: 4px;
+            }
+        }
+        td{
+            padding: 6px;
+            text-align: center;
+        }
+        .img{
+            img{
+                height: 60px;
+                width: 60px;
+            }
+        }
+        .title{
+            width: 700px;
+        }
+        .shopname{
+            background-color: rgb(0, 128, 255);
+            color: #fff;
+            font-weight: 900;
+        }
+        .nums{
+            #num{
+                width: 30px;
+                height: 30px;
+                border: 1px solid #ddd;
+                text-align: center;
+            }
+            input{
+                width: 20px;
+                height: 20px;
+                text-align: center;
+            }
+        }
+        tfoot{
+            td{
+                text-align: right !important;
+                padding: 8px;
+                font-size: 20px;
+                color: rgb(0, 128, 255);
+            }
+            background-color: #eee;
+        }
+    }
+
+    #btn{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 30px;
+        a{
+            height: 50px;
+            width: 200px;
+            background-color: rgb(0, 128, 255);
+            font-size: 24px;
+            line-height: 50px;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
+}
+
+#jiesuan{
+    display: none;
+    padding: 24px;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 5;
+    width: 1000px;
+    // height: 100px;
+    background-color: #fff;
+    border: 10px solid rgb(0, 128, 255);
+    p{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            height: 60px;
+            width: 60px;
+        }
+    }
+    #zongjia{
+        text-align: center;
+        justify-content: center;
+    }
+}

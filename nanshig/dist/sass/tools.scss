@@ -1,0 +1,125 @@
+#tools{
+    position: fixed;
+    right: 0;
+    width: 5px;
+    height: 100%;
+    // height: 100px;
+    background-color: #7a6e6e;
+    z-index: 10;
+    .tright{
+        #indexlogin{
+            width: 300px;
+            height: 300px;
+            position: absolute;
+            left: 0;
+            top: 150px;
+            transform: translateX(-350px);
+            background-color: #fff;
+            box-shadow: 0px 0px 10px 5px rgba($color: #000000, $alpha: 0.2);
+            box-sizing: border-box;
+            padding: 10px 20px 20px;
+            display: none;
+            input{
+                width: 260px;
+                border: 1px solid #999;
+                height: 24px;
+                margin: 4px 0 10px;
+            }
+            #loginbtn{
+                height: 30px;
+                background-color: orangered;
+                color: #fff;
+                margin-top: 20px;
+            }
+            p{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                input{
+                    margin: 0;
+                }
+                a{
+                    font-size: 12px;
+                }
+                span{
+                    width: 100px;
+                    height: 24px;
+                    border: 1px solid #999;
+                    background-color: #ddd;
+                    text-align: center;
+                }
+            }
+            .close{
+                justify-content: flex-end;
+                a{
+                    font-size: 16px;
+                }
+            }
+            .jiao{
+                position: absolute;
+                right: 0;
+                transform: translate(19px,-200px);
+                border: 10px solid transparent;
+                border-left: 10px solid #fff;
+            }
+        }
+        .toolsbox{
+            // height: 32px;
+            // width: 32px;
+            background-color: #7a6e6e;
+            position: absolute;
+            left: 0;
+            transform: translate(-100%,0);
+            border-bottom-left-radius: 2px;
+            border-top-left-radius: 2px;
+            display: flex;
+            .toolstxt{
+                color: #fff;
+                background-color: #2f97f0;
+                display: block;
+                width: 0;
+                height: 32px;
+                font-size: 12px;
+                line-height: 32px;
+                overflow: hidden;
+                text-indent: 6px;
+                transition: width 0.3s;
+            }
+            .iconfont{
+                font-size: 32px;
+                line-height: 32px;
+                color: #fff;
+            }
+            .headimg{
+                z-index: 1;
+                height: 24px;
+                width: 24px;
+                margin: 4px;
+                border-radius: 50%;
+                background-image: url(../img/微信图片_20191116144825.jpg);
+                background-size: 24px;
+            }
+        }
+        .toolsbox:hover{
+            background-color: #2f97f0;
+        }
+        .toolsbox:hover .toolstxt{
+            width: 48px;
+        }
+        .toolsbox:nth-child(1){
+            top: 210px;
+        }
+        .toolsbox:nth-child(2){
+            top: 252px;
+        }
+        .toolsbox:nth-child(3){
+            top: 294px;
+        }
+        .toolsbox:nth-child(4){
+            top: 568px;
+        }
+        .toolsbox:nth-child(5){
+            top: 568px;
+        }
+    }
+}

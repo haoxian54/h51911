@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/register.css">
+    <link rel="stylesheet" href="../css/font_1506323_rikwshruxm/iconfont.css">
+    <title>注册页</title>
+</head>
+
+<body>
+    <div id="head">
+        <div id="header" class="content">
+            <h1>男士购</h1>
+            <p>为确保您账户的安全及正常使用，依《网络安全法》相关要求，6月1日起会员账户需绑定手机。如您还未绑定，请尽快完成，感谢您的理解及支持！</p>
+            <a href="http://localhost:1911/nanshig/src/html/login.html" id="headerbtn">登录</a>
+        </div>
+    </div>
+    <div id="main">
+        <div id="registerbox">
+            <div class="left">
+                <div class="register active">使用手机号码注册</div>
+                <div class="registerform">
+                    <div class="input name">
+                        <label for="tel">手机号:</label>
+                        <input type="text" id="tel" placeholder="请输入手机号码">
+                    </div>
+                    <div class="input" id="checkbox">
+                        <label for="checkcode">验证码:</label>
+                        <input type="text" id="checkcode" placeholder="验证码">
+                        <a id="checkcon" href="javascript:void(0)"></a>
+                    </div>
+                    <!-- <p>确保上方验证码输入正确，点击<a class="text" href="###"><span
+                                class="iconfont iconicon-test24"></span>发送短信验证</a>，并将您手机短信所接收到的“6位验证码”输入到下方短信验证，再提交下一步。
+                    </p>
+                    <div class="input verification">
+                        <label for="ver">短信验证:</label>
+                        <input type="text" id="ver" placeholder="输入6位短信验证码">
+                    </div> -->
+                    <div class="input psw">
+                        <label for="password">登录密码:</label>
+                        <input type="text" id="password" placeholder="请输入密码"><br>
+                    </div>
+                    <div class="input cpsw">
+                        <label for="cpassword">确认密码:</label>
+                        <input type="text" id="cpassword" placeholder="请再次输入密码"><br>
+                    </div>
+                    <input type="button" value="下一步" id="register">
+                </div>
+            </div>
+            <div class="right">
+                <div class="rtop">
+                    <p>使用第三方快捷账号登录</p>
+                    <p>
+                        <span class="iconfont iconicon-test72"></span>
+                        <span class="iconfont iconicon-test80"></span>
+                    </p>
+                </div>
+                <div class="rbottom">
+                    <h2>注册以后你可以</h2>
+                    <p><span class="iconfont iconicon-test8 blue"></span>购买商品支付订单</p>
+                    <p><span class="iconfont iconicon-test10 pink"></span>收藏商品关注店铺</p>
+                    <p><span class="iconfont iconicon-test43 green"></span>安全交易诚信无忧</p>
+                    <p><span class="iconfont iconicon-test11 redyellow"></span>积分获取优惠购物</p>
+                    <p><span class="iconfont iconicon-test57 orange"></span>会员等级享受特权</p>
+                    <p><span class="iconfont iconicon-test40 purple"></span>评价晒单站外分享</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot"></div>
+</body>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/myquery.js"></script>
+<script src="../js/checkcode.js"></script>
+<script src="../js/checkform.js"></script>
+<script src="../js/register.js"></script>
+<script>
+    (function () {
+        $('#foot').load('footer_area.html');
+    })()
+</script>
+
+</html>

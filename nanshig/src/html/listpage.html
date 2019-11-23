@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/indexheader.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/listpage.css">
+    <link rel="stylesheet" href="../css/tools.css">
+    <link rel="stylesheet" href="../css/font_1506323_rikwshruxm/iconfont.css">
+    <title>列表页</title>
+</head>
+
+<body>
+    <div id="tools">
+        <div class="tright">
+            <a class="toolsbox login">
+                <div class="toolstxt">未登录</div>
+                <div class="headimg"></div>
+            </a>
+            <a class="toolsbox shopcar">
+                <div class="toolstxt">购物车</div>
+                <div class="iconfont iconicon-test10"></div>
+            </a>
+            <a class="toolsbox gotop">
+                <div class="toolstxt">顶&nbsp&nbsp部</div>
+                <div class="iconfont iconicon-test58"></div>
+            </a>
+            <a class="toolsbox hidden">
+                <div class="toolstxt">隐&nbsp&nbsp藏</div>
+                <div class="iconfont iconicon-test83"></div>
+            </a>
+            <a class="toolsbox show"></a>
+            <div id="indexlogin">
+                <p class="close"><a href="javascript:void(0)" id="closebox">x</a></p>
+                <label for="uname">用户名:</label>
+                <br>
+                <input type="text" id="uname">
+                <p>
+                    <label for="psw">密码:</label><a href="javascript:void(0)">忘记登录密码？</a></p>
+                <input type="password" id="psw">
+                <div id="checkbox">
+                    <p>
+                        <label for="checkcode">验证码:</label><a href="javascript:void(0)" id="changecode">更换验证码</a>
+                    </p>
+                    <p>
+                        <input type="text" id="checkcode"><span id="codecon"></span>
+                    </p>
+                </div>
+                <input type="button" id="loginbtn" value="登录">
+                <p>
+                    <a href="javascript:void(0)">QQ账号</a>
+                    <a href="javascript:void(0)">新浪微博</a>
+                    <a href="html/register.html">注册新用户</a>
+                </p>
+                <div class="jiao"></div>
+            </div>
+        </div>
+    </div>
+    <div id="header">
+        <div id="top">
+            <div class="content">
+                <p>您好，欢迎来到潮男购物网站！</p>
+                <ul id="userarea">
+                    <li><a href="login.html" class="logina">请登录</a></li>
+                    <li><a href="register.html">免费注册</a></li>
+                    <li>用QQ账号登录</li>
+                    <li>用微信账号登录</li>
+                </ul>
+            </div>
+        </div>
+        <div id="bottom">
+            <div class="content">
+                <h1>男士购</h1>
+                <img src="img/logogif.gif" alt="">
+                <div id="mid">
+                    <div id="searchbox">
+                        <select name="stype" id="stype">
+                            <option value="goods">商品</option>
+                            <option value="shops">店铺</option>
+                        </select>
+                        <input type="text" class="input" placeholder="搜“型男试试，新品上线，快来拔草”">
+                        <a class="sbtn" href="#">搜索</a>
+                    </div>
+                    <ul id="hotsearch">
+                        <li>热门搜索：</li>
+                        <li>潮男</li>
+                        <li>外套</li>
+                        <li>七分裤</li>
+                        <li>t恤</li>
+                        <li>衬衫</li>
+                        <li>香水</li>
+                        <li>帆布鞋</li>
+                        <li>运动休闲</li>
+                    </ul>
+                </div>
+                <div class="left">
+                    <div class="my">
+                        <span class="iconfont iconicon-test35"></span>会员中心<span class="iconfont iconicon-test60"></span>
+                        <div class="member">
+                            <div class="top">
+                                <a href="###">进入会员中心></a>
+                            </div>
+                            <div class="mid">
+                                <ul class="mleft">
+                                    <li><a href="###">站内消息(0)</a></li>
+                                    <li><a href="###">咨询回复(0)</a></li>
+                                    <li><a href="###">代金券(0)</a></li>
+                                </ul>
+                                <ul class="mright">
+                                    <li><a href="###">我的订单></a></li>
+                                    <li><a href="###">我的收藏></a></li>
+                                    <li><a href="###">我的积分></a></li>
+                                </ul>
+                            </div>
+                            <div class="bottom">
+                                <p><span>最近浏览的商品</span><span>全部浏览历史</span></p>
+                                <span class="statu">暂无商品</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my mycar">
+                        <a href="shoppingcar.html">
+                            <span class="iconfont iconicon-test10"></span>我的购物车<span
+                                class="iconfont iconicon-test60"></span>
+                        </a>
+                        <!-- <div class="shopcar">
+                            <h2>最新加入的商品</h2>
+                            <ul id="carlist">
+                                <li>您的购物车中暂无商品，赶紧选择心爱的商品吧！</li>
+                            </ul>
+                            <div class="carbottom">
+                                <input type="button" id="account" value="结算购物车中的商品">
+                            </div>
+                    </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="headerlist">
+            <div class="content">
+                <p><span class="iconfont iconicon-test39"></span>所有分类</p>
+                <ul>
+                    <li><a href="../index.html">首页</a></li>
+                    <li><a href="#" class="golistpage">潮款服装</a></li>
+                    <li><a href="#" class="golistpage">时尚鞋靴</a></li>
+                    <li><a href="#">护肤美妆</a></li>
+                    <li><a href="#" class="golistpage">精选套装</a></li>
+                    <li><a href="#">时尚T恤</a></li>
+                    <li><a href="#">防晒衣</a></li>
+                    <li><a href="#">POLO衫</a></li>
+                    <li><a href="#">休闲鞋</a></li>
+                    <li><a href="#">百搭七分裤</a></li>
+                </ul>
+                <div class="app"><span class="iconfont iconicon-test18"></span>下载APP</div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="content">
+        <p class="posi">
+            <span class="iconfont iconicon-test20"></span><a href="../index.html">首页</a>
+            <span class="iconfont iconicon-test61"></span><a href="###">潮款服饰</a>
+        </p>
+        <div id="recommend" class="content">
+            <h2>热门推荐</h2>
+            <ul id="recommendlist">
+                <!-- <li>
+                    <img src="../img/erweima.png" alt="">
+                    <div class="recomdetail">
+                        <p class="title">hahahahahahahahaha</p>
+                        <p class="price">商城价:<span>￥180</span></p>
+                        <a href="javascript:void(0)">立即抢购</a>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div id="menu" class="content">
+            <p>排序方式:</p>
+            <ul class="menulist">
+                <li class="active" id="normal">默认</li>
+                <li>销量<span class="iconfont iconicon-test69"></span></li>
+                <li>人气<span class="iconfont iconicon-test69"></span></li>
+                <li id="rprice">价格<span class="iconfont iconicon-test69"></span></li>
+            </ul>
+            <div class="prices">
+                <input type="text"> - <input type="text">
+                <input type="button" value="确定" id="pconfirm">
+            </div>
+            <div class="other">
+                <input type="checkbox" id="ziying"><label for="ziying">平台自营</label>
+                <input type="checkbox" id="gift"><label for="gift">赠品</label>
+                <span>商品所在地</span>
+                <select name="location" id="location">
+                    <option value="1">不限地区</option>
+                    <option value="2">广州</option>
+                    <option value="3">北京</option>
+                    <option value="4">上海</option>
+                </select>
+                <div class="fr">
+                    <input type="button" value="上一页">
+                    <input type="button" value="下一页">
+                </div>
+            </div>
+        </div>
+        <div id="goods">
+            <div id="goodslist">
+                <li class="items">
+                    <div class="itemscon">
+                        <div class="goodsimg"><img
+                                src="https://www.nanshig.com/data/upload/shop/store/goods/45/45_06266619536950613_240.jpg"
+                                alt=""></div>
+                        <div class="goodsinfo">
+                            <ul class="simg">
+                                <li>
+                                    <img src="https://www.nanshig.com/data/upload/shop/store/goods/45/45_06266619536950613_60.jpg"
+                                        alt="">
+                                </li>
+                            </ul>
+                            <p class="title">男士破洞春秋牛仔夹克男潮2019新款春装上衣韩版潮流褂子春季外套 黑色 M</p>
+                            <div class="pricebox">
+                                <p>
+                                    <span class="price">￥128.00</span>
+                                    <del class="mprice">￥168.00</del>
+                                </p>
+                                <div>
+                                    <img src="../img/star.png" alt=""><br>
+                                    <a href="javascript:void(0)">
+                                        <input type="checkbox">加入对比
+                                    </a>
+                                </div>
+                            </div>
+                            <ul class="sell">
+                                <li>
+                                    <p>0</p>
+                                    <p>商品销量</p>
+                                </li>
+                                <li>
+                                    <p>0</p>
+                                    <p>用户评论</p>
+                                </li>
+                            </ul>
+                            <p class="master">
+                                <a href="javascript:void(0)">潮男搭配师</a>
+                            </p>
+                            <a href="javascript:void(0)" class="addcar"><span
+                                    class="iconfont iconicon-test11"></span>加入购物车</a>
+                        </div>
+                    </div>
+                </li>
+            </div>
+            <div id="page">
+                <input type="button" value="首页" id="firstpage" class="ui-state-disabled">
+                <input type="button" value="上一页" id="prev" class="ui-state-disabled">
+                <ul id="pagenum">
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+                <input type="button" value="下一页" id="next">
+                <input type="button" value="尾页" id="lastpage">
+            </div>
+        </div>
+    </div>
+    <div id="footer"></div>
+</body>
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/myquery.js"></script>
+<script src="../js/gotop.js"></script>
+<script src="../js/tools.js"></script>
+<script src="../js/listpage.js"></script>
+<script src="../js/loginstatus.js"></script>
+<script>
+    (function () {
+        // $('#header').load('indexheader.html');
+        $('#footer').load('footer_area.html');
+    })()
+</script>
+
+</html>

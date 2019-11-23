@@ -1,0 +1,154 @@
+::-webkit-input-placeholder {
+  color: #ddd;
+}
+
+#main {
+  padding: 24px 0;
+}
+
+#main #loginbox {
+  height: 468px;
+  width: 478px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+#main #loginbox .logintype {
+  display: flex;
+}
+
+#main #loginbox .logintype li {
+  flex: 1;
+  text-align: center;
+  color: #777;
+  font-size: 18px;
+  line-height: 54px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+#main #loginbox .logintype .active {
+  color: #2f97f0;
+  border-bottom: 3px solid #2f97f0;
+  position: relative;
+}
+
+#main #loginbox .logintype .active:after {
+  content: "";
+  border: 10px solid transparent;
+  border-top: 10px solid #2f97f0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%);
+}
+
+#main #loginbox .loginform li {
+  padding-top: 28px;
+  flex-direction: column;
+  align-items: center;
+  display: none;
+}
+
+#main #loginbox .loginform li .input {
+  border: 1px solid #ddd;
+  height: 50px;
+  width: 349px;
+  display: flex;
+}
+
+#main #loginbox .loginform li .input label {
+  padding: 0 20px;
+  line-height: 50px;
+  color: #525252;
+  font-size: 14px;
+}
+
+#main #loginbox .loginform li .input input {
+  flex: 1;
+}
+
+#main #loginbox .loginform li .name {
+  border-bottom: none;
+}
+
+#main #loginbox .loginform li .verification {
+  margin-top: 12px;
+  display: flex;
+}
+
+#main #loginbox .loginform li .verification input {
+  flex: 1;
+}
+
+#main #loginbox .loginform li .verification a {
+  height: 100%;
+  width: 100px;
+  background-color: #2f97f0;
+  text-align: center;
+  line-height: 50px;
+  font-size: 24px;
+  color: #fff;
+}
+
+#main #loginbox .loginform li .login_check {
+  margin: 20px 0;
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main #loginbox .loginform li .login_check label {
+  font-size: 12px;
+  color: #525252;
+}
+
+#main #loginbox .loginform li .login_check a {
+  text-decoration: none;
+  font-size: 12px;
+}
+
+#main #loginbox .loginform li #login {
+  width: 350px;
+  height: 40px;
+  background-color: #2f97f0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+#main #loginbox .loginform li p {
+  width: 350px;
+  font-size: 12px;
+  color: #111;
+  margin-bottom: 10px;
+}
+
+#main #loginbox .loginform li .partner {
+  width: 350px;
+  font-size: 12px;
+  display: flex;
+}
+
+#main #loginbox .loginform li .partner a {
+  color: #ddd;
+  display: flex;
+  align-items: center;
+}
+
+#main #loginbox .loginform li .partner a .iconfont {
+  font-size: 36px;
+}
+
+#main #loginbox .loginform li .partner .ml {
+  margin-left: 20px;
+}
+
+#main #loginbox .loginform .block {
+  display: flex;
+}
